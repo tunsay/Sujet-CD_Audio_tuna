@@ -8,11 +8,11 @@ Avant de commencer, assurez-vous d'avoir installé :
 ## 🚀 **1. Cloner le projet**
 ```sh
 git clone <adresse repo>
-cd cd-audio-app
+cd <nom du dossier>
 ```
 
 ## 📦 **2. Configuration de l'environnement**
-Créez un fichier `.env` dans le dossier **backend** et ajoutez :
+Créez un fichier `.env` dans le dossier **server** et ajoutez :
 
 ```ini
 DB_USER=user
