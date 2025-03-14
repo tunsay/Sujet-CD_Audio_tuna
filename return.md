@@ -67,3 +67,10 @@ AddCD.propTypes = {
 };
 ```
 
+On a mis à jour le repo, ce qui re-analyse le repo dans Sonar Cloud:
+
+![rel-after](rel-after.png)
+
+Ici on voit bien que le problème est résolu
+
+Voilà comment marche Sonar Cloud c'est un outil très pratique !
