@@ -10,5 +10,11 @@ app.use(express.json());
 
 app.use("/api", cdRoutes);
 
-const PORT = process.env.PORT || 5005;
-app.listen(PORT, () => console.log(`Serveur démarré sur http://localhost:${PORT}`));
+// Démarrage du serveur uniquement si le fichier est exécuté directement
+if (require.main === module) {
+  const PORT = process.env.PORT || 5005;
+  app.listen(PORT, () => console.log(`Serveur démarré sur http://localhost:${PORT}`));
+}
+
+// Exporter l'app pour les tests
+module.exports = app;

@@ -2,9 +2,9 @@ import PropTypes from "prop-types";
 
 const CDItem = ({ cd, onDelete }) => {
   return (
-    <li>
+    <li className="cd-item">
       <span>{cd.title} - {cd.artist} ({cd.year})</span>
-      <button className="delete-btn" onClick={() => onDelete(cd.id)}>🗑 Supprimer</button>
+      <button className="delete-cd" onClick={() => onDelete(cd.id)}>🗑 Supprimer</button>
     </li>
   );
 };
@@ -14,4 +14,4 @@ CDItem.propTypes = {
   onDelete: PropTypes.func.isRequired,
 };
 
-export default CDItem
+export default CDItem;
